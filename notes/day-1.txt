@@ -1,0 +1,141 @@
+dotnet core: 2017 (1.0 => 6.0)
+
+	open source
+	cross platform
+	better performance
+	modular 
+	microservices (	minimal api)
+	cloud ready
+	extensible
+
+.NET <=> dotnetcore
+.NET Framework 4.8 (2019)
+.NET Core 3.1 => 5.0
+
+May => .NET 5
+November => .NET 6
+May => current 7.0 
+November => LTS 8.0
+
+Components:
+	a. BCL/FCL
+	b. CLR
+	c. ASP.NET
+	d. ADO.NET
+	e. UI
+
+tools: csc, vbc, cpc compilers
+
+
+dotnet core: 
+	a. CoreFX library (smaller packages/modules)
+	b. Core CLR => .NET Core runtime => desktop and asp.net core runtime
+	e. Roslyn compiler
+dotnet core sdk
+dotnet CLI 
+
+.NET Standard => Guideline/ specification of certain APIs which you can use to create appliaction to run both on .NET Framework and .NET Core (.NET Standard library)
+
+dotnet cli:
+commands=>
+>dotnet --list-sdks: list of dotnet core sdks installed
+>dotnet new --list: view new application templates
+>dotnet new console --name first-app --framework netcoreapp3.1: creatng new console app using .net core 3.1 
+
+compile:
+inside app directory
+>dotnet build
+
+outside app directory
+>dotnet build project-dir\project-file-name.csproj
+
+run:
+inside directory
+>dotnet run
+
+outside the directory
+>dotnet run --project first-app\first-app.csproj
+
+asp.net
+	- webpage app
+	- web service
+	....
+
+asp.net mvc
+	- razor app (MVC)
+	- web api
+	.............
+
+asp.net core
+	- web app (razor)
+	- web app (blazor)
+	- web app (MVC)
+	- web api
+	...............
+
+
+asp.net framework lifecycle
+asp.net mvc framework
+asp.net core 
+
+
+*.cs files => *.dll file (assembly file) => .NET Core runs on different o/s
+
+
+Host => an object that will encapsulate an application's resources
+	a. DI
+	b. Logging
+	c. Configuration
+	...........................
+
+
+Generic Host
+Web Host
+
+asp.net core apps configure and launch a host
+host => app startup and lifecycle management
+
+host configures a server and request processing pipeline (does not use any handler or module, but uses middleware)
+additionally the host in asp.net core app is going to manage the following:
+	a. DI
+	b. Logging
+	c. Configuration
+
+
+asp.net framework:
+	asp.net creates an environment which can process the request (context, application, request, response etc. objects)
+	the request is processed through a series of events (Start, BeginRequest, PreAuthenticateRequest, PreAuthorizeRequest etc....) which are processed by using modules, handlers and pages
+	M-H-P-M
+
+class MyModule:IHttpModule{
+	void OnPreAuthenticateRequest(object sender, eventargs e){
+		//authenticate an user before processing the page 	
+	}
+	void OnPreAuthorizeRequest(object sender, eventargs e){
+		//authorize an user before processing the page 	
+	}
+}
+
+ class MyHandler : IHttpHandler{
+}
+
+web.config=> regsiter modules and handlers
+
+global.asax => 
+
+page_init
+
+
+class MyMiddleware{
+
+	
+}
+
+
+
+
+
+
+
+
+

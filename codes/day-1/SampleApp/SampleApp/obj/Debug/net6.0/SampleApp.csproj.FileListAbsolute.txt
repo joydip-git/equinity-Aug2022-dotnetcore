@@ -1,0 +1,15 @@
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\bin\Debug\net6.0\SampleApp.exe
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\bin\Debug\net6.0\SampleApp.deps.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\bin\Debug\net6.0\SampleApp.runtimeconfig.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\bin\Debug\net6.0\SampleApp.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\bin\Debug\net6.0\SampleApp.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.csproj.AssemblyReference.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.AssemblyInfoInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.AssemblyInfo.cs
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.csproj.CoreCompileInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\refint\SampleApp.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\SampleApp.genruntimeconfig.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\SampleApp\obj\Debug\net6.0\ref\SampleApp.dll

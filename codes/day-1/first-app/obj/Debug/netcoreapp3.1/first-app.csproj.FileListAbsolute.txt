@@ -1,0 +1,14 @@
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.exe
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.deps.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.runtimeconfig.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.runtimeconfig.dev.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\bin\Debug\netcoreapp3.1\first-app.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.csproj.AssemblyReference.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.AssemblyInfoInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.AssemblyInfo.cs
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.csproj.CoreCompileInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\first-app\obj\Debug\netcoreapp3.1\first-app.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\training\equinity-Aug2022-dotnetcore\codes\day-1\SampleApp\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -2,13 +2,14 @@
 using Microsoft.Extensions.Hosting;
 
 //Action<IServiceCollection> serviceCollection;
-using IHost host = Host.CreateDefaultBuilder(args)
+using IHost host = Host.CreateDefaultBuilder(args)   
     .ConfigureServices((hostContext, services) =>
     {        
         services.AddHostedService<Sample>();
     })
     .Build();
 //host.Services.GetRequiredService<Sample>();
+//host.Start
 await host.RunAsync();
 /*
 namespace HostDemo

@@ -28,13 +28,38 @@ namespace aspnetcore_v5
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
+            //RequestDelegate: public delegate Task RequestDelegate(HttpContext context);
+            app.Use(
+               async (context, next) =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
+                    await context.Response.WriteAsync("1. middleware1 request\n");
+                    await next();
+                    await context.Response.WriteAsync("2. middleware1 response\n");
+                }
+                );
+            app.Use(
+               async (context, next) =>
+               {
+                   await context.Response.WriteAsync("3. middleware2 request\n");
+                   await next();
+                   await context.Response.WriteAsync("4. middleware2 response\n");
+               }
+                );
+
+
+            app.Run(
+               async (context) =>
+                {
+                    await context.Response.WriteAsync("Hello World!\n");
+                }
+                );
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello World!\n");
+            //    });
+            //});
         }
     }
 }

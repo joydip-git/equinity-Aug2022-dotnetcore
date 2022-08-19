@@ -116,19 +116,22 @@ azure => container service
 
 
 Host
-	=> background work
+	=> background work (hosted service)
 	=> encapsulate app features
 		- DI
 		- Logging
 		- Http Request processing
 		- configure the middleware pipeline
 		- configuration
+	=> and lifetime functionalities
 
 Host:
 	web host (backward compatibilty)
 	.net core generic host (2.1 => 3.0)	
 	.net core minimal host
 
+
+.net core generic host (2.1 => 3.0)
 IHostBuilder builder =  Host.CreateDefaultBuilder();
 IHostBuilder => configuration for the host
 	builder.AddHostedService()
@@ -147,13 +150,86 @@ CreateDefaultBuilder:
 		- appsettings.development.json
 		- environment variables (prefixed by DOTNET_.)
 		- command line arguments
-		- Secret Manager when tha pp runs in the development mode
+		- Secret Manager when the app runs in the development mode
+	
 	adds the logging service providers
 		- console
 		- debug
 		- eventsource
 		- eventlog (in windows)
+
 	enables scope validation and dependency validation (in development)
+
+Hosted Service: => IHostedService
+			=> StartAsync
+			=> StopAsync
+
+you have to regster the hosted service with the service conatiner's collection of hosted services
+when the host starts, host will create instance of hosted service (Sample), will call StartAsync on each implementation of the hosted service 
+you might turn off (close) the host. the service will stop it's work. at that time StopAsync will be called.
+now the service instance will be disposed
+
+
+IHostApplicationLifetime: handle post startup and graceful shutdown of the host
+	ApplicationStarted
+	ApplicationStopping
+	ApplicationStopped
+
+IHostLifetime: controls when the host strats and when it shuts down
+
+public interface IHostLifetime
+{
+    Task WaitForStartAsync(CancellationToken cancellationToken);
+    Task StopAsync(CancellationToken cancellationToken);
+}
+
+IHostEnvironment: class to get certain information about host
+			- application name
+			- contrnet root path
+			- content froot file provider
+			- environment name
+
+IApplicationBuilder => builds your application
+
+
+middleware:
+	s/w assembled into request pipeline to handle requests and respones
+	-> chooses whether to pass the request to the next middleware in the pipeline 
+	-> Can perform something before and after the next middleware
+
+RequestDelegate is used to build the request pipeline.
+is used to handle http requests
+RequestDelagate are congigured using
+ - Use
+ - Run
+ - Map
+extension methods
+
+cane be written inside a class
+in-line anonymous methods
+
+
+class M
+{
+	function(){}
+}
+
+ASP.NET Core MVC or Razor pages:
+	Request 
+		=> Exception handler 
+		=> HSTS
+		=> HttpsRedirection
+		=> Static files
+		=> Routing [app.UseRouting()]
+		=> CORS
+		=> Authentication
+		=> Authorization 
+		=> Custom middlewares => Endpoint
+
+
+
+
+
 
 
 

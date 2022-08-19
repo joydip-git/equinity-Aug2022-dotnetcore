@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NFdY3WRcJWU8Ib1L3k6dHZsqdLxpKLO8bsMSnF8XRPQ=",
+  "Source": "aspnetcore_v6",
+  "BasePath": "_content/aspnetcore_v6",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

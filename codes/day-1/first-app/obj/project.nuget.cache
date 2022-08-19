@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E/3AW4YnLA3G9jrmZBRfXByWxvPRS9+cqpepQhF/wu/3pX9YBb44QHjWVRnQpi4hHIC7EDAdxUV5Kcxcmt9RXw==",
+  "dgSpecHash": "c1jF7UTaXsnkCOP34HWS9OdKV3vaalwgF4ohSydEQNjPyoZ4ZrLjws/JztpnSFpHTUgCQEf9WLtLYsXt51x2dw==",
   "success": true,
-  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj",
+  "projectFilePath": "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

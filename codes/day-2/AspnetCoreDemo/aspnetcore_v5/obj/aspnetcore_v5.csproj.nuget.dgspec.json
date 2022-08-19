@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj": {}
+    "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-2\\AspnetCoreDemo\\aspnetcore_v5\\aspnetcore_v5.csproj": {}
   },
   "projects": {
-    "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj": {
+    "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-2\\AspnetCoreDemo\\aspnetcore_v5\\aspnetcore_v5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj",
-        "projectName": "first-app",
-        "projectPath": "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\first-app.csproj",
+        "projectUniqueName": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-2\\AspnetCoreDemo\\aspnetcore_v5\\aspnetcore_v5.csproj",
+        "projectName": "aspnetcore_v5",
+        "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-2\\AspnetCoreDemo\\aspnetcore_v5\\aspnetcore_v5.csproj",
         "packagesPath": "C:\\Users\\joydip\\.nuget\\packages\\",
-        "outputPath": "e:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-1\\first-app\\obj\\",
+        "outputPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-2\\AspnetCoreDemo\\aspnetcore_v5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,15 +21,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -40,8 +40,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -53,6 +53,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

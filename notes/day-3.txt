@@ -4,3 +4,47 @@ middleware
 services - dependency injection
 config
 process
+
+IApplicationBuilder
+
+1. anonymous method
+2. creating reusable middleware class
+	a. conventional
+	b. using factory
+
+ControllerFactory => creates controller instance
+ActionInvoker => invoke an action
+
+services:
+	a. AddControllers [web api]: 
+		supports: controllers,model binding, API explorer, auth, cors, validation, format mapping
+		does not support: Antiforgery, TempData, Views, Pages, TagHelpers, Memory cache etc.
+
+	b. AddControllerWithViews [mvc]:
+		supports: controllers,model binding, API explorer, auth, cors, validation, format mapping, Antiforgery, TempData, Views
+		does not support: Pages, TagHelpers, Memory cache etc.
+
+	c. AddRazorPages [classic page based application]:
+		supports: controllers, model binding, API explorer, auth, validation,  Antiforgery, TempData, Views, Pages, TagHelpers, Memory cache etc.
+		does not support: cors, format mapping,
+
+	d. AddMvc: 
+		supports: controllers,model binding, API explorer, auth, cors, validation, format mapping,  Antiforgery, TempData, Views, Pages, TagHelpers, Memory cache etc
+
+	e. AddMvcCore [basic MVC services]:
+
+custom service:
+	a. DbContext type class 
+		AddDbContext<T>() [Microsoft.EntityFramrworkCore]
+
+	b. Configuration:
+		builder.Configuration.AddX()
+
+	c. custom services:
+		
+		builder.Services.AddTransient<ITransientOperationService, OperationService>();
+		builder.Services.AddScoped<IScopedOperationService, OperationService>();
+		builder.Services.AddSingleton<ISingletionOperationService, OperationService>();
+
+		scope resolution and explicit demand for instance cration for short time use
+		

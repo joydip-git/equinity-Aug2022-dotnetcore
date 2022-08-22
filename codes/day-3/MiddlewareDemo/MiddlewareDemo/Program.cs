@@ -1,4 +1,5 @@
 using MiddlewareDemo.Middlewares;
+using MiddlewareDemo.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +7,24 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 //ConfigureServices(builder);
 //IServiceCollection services = builder.Services;
 
+builder.Services.AddTransient<ITokenInterceptorService, TokenInterceptorService>();
 builder.Services.AddTransient<FactoryActivatedTokenInterceptorMiddleware>();
+
+//builder.Services.AddMvcCore();
+//builder.Services.AddMvc();
+//web api
+//builder.Services.AddControllers();
+
+//web (MVC) with razor pages
+//builder.Services.AddControllersWithViews();
+
+//web page (razor page)
+//builder.Services.AddRazorPages();
+
+//signal R
+//builder.Services.AddSignalR();
+
+
 
 WebApplication app = builder.Build();
 

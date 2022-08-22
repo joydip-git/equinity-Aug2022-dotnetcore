@@ -1,0 +1,6 @@
+host
+startup
+middleware
+services - dependency injection
+config
+process

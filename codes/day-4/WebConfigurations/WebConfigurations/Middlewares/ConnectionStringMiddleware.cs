@@ -13,24 +13,36 @@ namespace WebConfigurations.Middlewares
         private readonly IOptions<AppDbConstr> _options;
         private readonly IOptions<SampleConfig> _sampleOptions;
         private readonly ILogger<ConnectionStringMiddleware> _logger;
+        private readonly IOptions<ValidationConfig> _validationConfigOptions;
 
-        public ConnectionStringMiddleware(RequestDelegate next, IOptions<AppDbConstr> options, IOptions<SampleConfig> sampleOptions, ILoggerFactory loggerFactory)
+        public ConnectionStringMiddleware(RequestDelegate next, IOptions<AppDbConstr> options, IOptions<SampleConfig> sampleOptions, ILoggerFactory loggerFactory, IOptions<ValidationConfig> validationConfigOptions)
         {
             _next = next;
             _options = options;
             _sampleOptions = sampleOptions;
             _logger = loggerFactory.CreateLogger<ConnectionStringMiddleware>();
+            _validationConfigOptions = validationConfigOptions;
         }
 
         public async Task Invoke(HttpContext httpContext)
         {
             await httpContext.Response.WriteAsync(_options.Value.ToString());
-            await _next(httpContext);
+            
             //await httpContext.Response.WriteAsync(_sampleOptions.Value.ToString());
             try
             {
                 var sampleConfig = _sampleOptions.Value;
                 await httpContext.Response.WriteAsync(_sampleOptions.Value.ToString());
+            }
+            catch (OptionsValidationException ex)
+            {
+                ex.Failures.ToList<string>().ForEach(e => _logger.LogError(e));
+            }
+            await _next(httpContext);
+            try
+            {
+                var validationConfig = _validationConfigOptions.Value;
+                await httpContext.Response.WriteAsync(_validationConfigOptions.Value.ToString());
             }
             catch (OptionsValidationException ex)
             {

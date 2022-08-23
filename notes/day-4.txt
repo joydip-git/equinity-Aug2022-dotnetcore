@@ -5,7 +5,7 @@
 5. services and dependency injcetion
 6. configuration
 7. options
-8. servers
+8. servers and hosting model
 
 application configuration:
 configuration is provided by several configuration providers in ASP.NET Core

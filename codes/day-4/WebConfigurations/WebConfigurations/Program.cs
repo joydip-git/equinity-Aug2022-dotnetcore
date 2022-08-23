@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 //v2.
 //var connectionSection = builder.Configuration.GetSection(AppDbConstr.APPDB_CONSTR);
-//var appDbConstr = connectionSection.Get<AppDbConstr>()
+//var appDbConstr = connectionSection.Get<AppDbConstr>();
 
 //v3.
 var connectionSection = builder.Configuration.GetSection(AppDbConstr.APPDB_CONSTR);
@@ -36,6 +36,10 @@ builder.Services
 //OptionsBuilder<SampleConfig> optionsBuilder = builder.Services.AddOptions<SampleConfig>();
 //optionsBuilder = optionsBuilder.Bind(sampleSection);
 //optionsBuilder = optionsBuilder.ValidateDataAnnotations();
+
+
+builder.Services.Configure<ValidationConfig>(builder.Configuration.GetSection(ValidationConfig.VALIDATION_CONFIG_SECTION_NAME));
+builder.Services.AddSingleton<IValidateOptions<ValidationConfig>, ValidationConfigValidation>();
 
 var app = builder.Build();
 

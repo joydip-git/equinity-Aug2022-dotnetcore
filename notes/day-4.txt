@@ -1,0 +1,41 @@
+1. start up
+2. host
+3. middleware
+4. .NET 5 & .NET 6
+5. services and dependency injcetion
+6. configuration
+7. options
+8. servers
+
+application configuration:
+configuration is provided by several configuration providers in ASP.NET Core
+
+JSON files
+	setting files: appsettings.json
+	environment variables
+	Azure key vault
+	Azure app configuration
+	command-line arguments
+	custom providers, installed or created
+	directoty files
+	in-memory .NET objects
+
+	WebApplicationBuilder builder = WebApplication.CreateBuilder(args)
+
+Hosting:
+	1. ASP.NET core InProcess hosting model: IISExpress
+	2. ASP.NET Core OutOfProcess hosting model: 
+		a. an internal web server (Kestrel)
+		b. an external web server (IIS, Apache, Nginx)
+
+Kestrel web server: internet facing web server, cross platform 
+
+1. read the section
+2. pick up the keys and values
+3. create a model
+4. supply the model instance through DI in the entire application
+
+Options pattern: helps you to use certain model classes to provide strongly typed access to group of related settings
+
+model depend on the config settings 
+

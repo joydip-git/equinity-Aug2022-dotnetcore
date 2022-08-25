@@ -1,3 +1,4 @@
+using EquinityCommerceApp.Web.Mapping;
 using EquinityCommerceApp.Web.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ ConfigureServices(builder);
 
 var app = builder.Build();
 
+await CreateAndSeedDatabase(app);
 // Configure the HTTP request pipeline.
 ConfigureMiddlewarePipeline(app);
 
@@ -15,6 +17,7 @@ app.Run();
 
 static void ConfigureServices(WebApplicationBuilder builder)
 {
+    builder.Services.AddAutoMapper(typeof(CategoryModelToCategory));
     var conStr = builder.Configuration.GetConnectionString("EquinityDbConStr");
     builder.Services.AddDbContext<EquinityAppDbContext>(
         options =>
@@ -44,4 +47,24 @@ static void ConfigureMiddlewarePipeline(WebApplication app)
         name: "default",
         pattern: "{controller}/{action}/{id?}",
         defaults: new { controller = "Home", action = "Index" });
+}
+
+static async Task CreateAndSeedDatabase(WebApplication app)
+{
+    var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+    try
+    {       
+        var serviceProvider = app.Services.GetRequiredService<IServiceProvider>();
+        using (var scope = serviceProvider.CreateScope())
+        {
+            var dbContext = scope.ServiceProvider.GetRequiredService<EquinityAppDbContext>();
+            await EquinityAppDbContextSeed.SeedAsync(dbContext, loggerFactory, 3);
+        }
+    }
+    catch (Exception ex) 
+    {
+        var logger = loggerFactory.CreateLogger("Application");
+        logger.LogError(ex.Message);
+        throw;
+    }
 }

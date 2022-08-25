@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\training\equinity-Aug2022-dotnetcore\codes\day-5\EquinityCommerceApp\EquinityCommerceApp.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-5/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/training/equinity-Aug2022-dotnetcore/codes/day-5/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

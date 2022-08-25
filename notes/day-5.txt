@@ -1,0 +1,10 @@
+ECommerce App:
+	Users:	
+		- Admin, 
+		- Customer
+			- Regular => 0-10, 11-50, 51-100, 100+					
+			- Company => 
+
+1. Admin:
+	a. add new or update/delete/view new category, cover type, product
+	

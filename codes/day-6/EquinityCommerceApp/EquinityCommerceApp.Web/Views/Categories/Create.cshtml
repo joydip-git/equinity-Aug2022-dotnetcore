@@ -1,14 +1,12 @@
 ﻿@model CategoryModel
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Create";
 }
 
-@*<partial name="_Notification" />*@
-<form method="post" asp-action="Edit">
-    <input asp-for="CategoryId" hidden />
+<form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary"> Edit Category</h2>
+            <h2 class="text-primary"> Create Category</h2>
         </div>
         <div class="mb-3">
             <label asp-for="Name"></label>
@@ -19,9 +17,8 @@
             <label asp-for="DisplayOrder"></label>
             <input asp-for="DisplayOrder" class="form-control" />
             <span asp-validation-for="DisplayOrder" class="text-danger"></span>
-        </div>
-        @* <a asp-action="Edit" asp-controller="Categories" asp-route-id="@Model.CategoryId" class="btn btn-primary" style="width:150px">Update</a>*@
-        <button class="btn btn-primary" style="width:150px">Update</button>
+        </div>         
+        <button class="btn btn-primary" style="width:150px">Create</button>
         &nbsp;&nbsp;
         <a asp-action="Index" asp-controller="Categories" class="btn btn-secondary" style="width:150px">Back To List</a>
     </div>

@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\training\equinity-Aug2022-dotnetcore\codes\day-6\EquinityCommerceApp\EquinityCommerceApp.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +49,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/training/equinity-Aug2022-dotnetcore/codes/day-6/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_ValidationScriptsPartial.cshtml]

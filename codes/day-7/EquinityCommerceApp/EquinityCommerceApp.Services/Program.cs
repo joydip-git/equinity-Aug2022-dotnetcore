@@ -1,6 +1,7 @@
 using EquinityCommerceApp.Core.Repositories;
 using EquinityCommerceApp.DataAccess.Data;
 using EquinityCommerceApp.DataAccess.Repositories;
+using EquinityCommerceApp.DataAccess.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,9 +23,11 @@ static void ConfigureAPIServices(WebApplicationBuilder builder)
     builder.Services.AddDbContext<EquinityAppDbContext>(
         options =>
         {
+            options.EnableSensitiveDataLogging();
             options.UseSqlServer(conStr);
+            options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         });
-    builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();   
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();

@@ -15,6 +15,15 @@ namespace EquinityCommerceApp.DataAccess.Data
             };
             return categories;
         }
+        private static IEnumerable<CoverType> GetPreConfiguredCoverTypes()
+        {
+            var coverTypes = new List<CoverType>
+            {
+                new CoverType{ Name="Hardcover"},
+                new CoverType{ Name="Paperback"},
+            };
+            return coverTypes;
+        }
         public static async Task SeedAsync(EquinityAppDbContext dbContext, ILoggerFactory loggerFactory, int? retryAttempt = 0)
         {
             int retryCount = retryAttempt ?? 0;
@@ -25,6 +34,12 @@ namespace EquinityCommerceApp.DataAccess.Data
                 {
                     var categories = GetPreConfiguredCategories();
                     dbContext.Categories.AddRange(categories);
+                    await dbContext.SaveChangesAsync();
+                }
+                if (!dbContext.CoverTypes.Any())
+                {
+                    var coverTypes = GetPreConfiguredCoverTypes();
+                    dbContext.CoverTypes.AddRange(coverTypes);
                     await dbContext.SaveChangesAsync();
                 }
             }

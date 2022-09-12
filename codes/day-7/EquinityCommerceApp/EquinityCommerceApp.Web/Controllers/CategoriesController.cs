@@ -7,10 +7,10 @@ namespace EquinityCommerceApp.Web.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly ICategoryHttpService _categoryHttpService;
+        private readonly IApiService<CategoryModel> _categoryHttpService;
         private readonly ILogger<CategoriesController> _logger;
 
-        public CategoriesController(ILogger<CategoriesController> logger, ICategoryHttpService categoryHttpService)
+        public CategoriesController(ILogger<CategoriesController> logger, IApiService<CategoryModel> categoryHttpService)
         {
             _logger = logger;
             _categoryHttpService = categoryHttpService;
@@ -18,7 +18,7 @@ namespace EquinityCommerceApp.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var result = await _categoryHttpService.GetAllCategoriesAsync();
+            var result = await _categoryHttpService.GetAllAsync();
             return View(result.Record);
         }
 
@@ -32,7 +32,7 @@ namespace EquinityCommerceApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CategoryModel category)
         {
-            var response =  await _categoryHttpService.AddCategoryAsync(category);
+            var response =  await _categoryHttpService.AddAsync(category);
             if (response.ResponseCode == System.Net.HttpStatusCode.Created)
             {
                 TempData["success"] = response.Message;
@@ -54,7 +54,7 @@ namespace EquinityCommerceApp.Web.Controllers
             }
             else
             {
-                var response = await _categoryHttpService.GetCategoryAsync(id.Value);
+                var response = await _categoryHttpService.GetAsync(id.Value);
                 if (response.ResponseCode == System.Net.HttpStatusCode.Found)
                 {
                     TempData["success"] = response.Message;
@@ -77,7 +77,7 @@ namespace EquinityCommerceApp.Web.Controllers
                 return View(category);
             }
 
-            var response = await _categoryHttpService.UpdateCategoryAsync(category);
+            var response = await _categoryHttpService.UpdateAsync(category);
             if (response.ResponseCode == System.Net.HttpStatusCode.Created)
             {
                 TempData["success"] = response.Message;
@@ -97,7 +97,7 @@ namespace EquinityCommerceApp.Web.Controllers
             {
                 return NotFound();
             }
-            var response = await _categoryHttpService.GetCategoryAsync(id.Value);
+            var response = await _categoryHttpService.GetAsync(id.Value);
             if (response.ResponseCode == System.Net.HttpStatusCode.Found)
             {
                 TempData["success"] = response.Message;
@@ -119,7 +119,7 @@ namespace EquinityCommerceApp.Web.Controllers
             }
             else
             {
-                var response = await _categoryHttpService.DeleteCategoryAsync(id.Value);
+                var response = await _categoryHttpService.DeleteAsync(id.Value);
                 if (response.ResponseCode == System.Net.HttpStatusCode.Found)
                 {
                     TempData["success"] = response.Message;

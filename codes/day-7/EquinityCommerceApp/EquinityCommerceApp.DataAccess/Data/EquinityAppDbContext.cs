@@ -9,11 +9,11 @@ namespace EquinityCommerceApp.DataAccess.Data
         //private readonly ILoggerFactory loggerFactory;
         public EquinityAppDbContext(DbContextOptions<EquinityAppDbContext> options) : base(options)
         {
-            
+
         }
 
         public DbSet<Category> Categories { get; set; }
-        //public DbSet<CoverType> CoverTypes { get; set; }
+        public DbSet<CoverType> CoverTypes { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
@@ -23,6 +23,7 @@ namespace EquinityCommerceApp.DataAccess.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             BuildCategoryModel(modelBuilder);
+            BuildCoverTypeModel(modelBuilder);
         }
 
         private static void BuildCategoryModel(ModelBuilder modelBuilder)
@@ -59,6 +60,7 @@ namespace EquinityCommerceApp.DataAccess.Data
                 .IsRequired(true)
                 .HasColumnOrder(3);
         }
+
         private static void BuildCoverTypeModel(ModelBuilder modelBuilder)
         {
             var coverTypeModelBuilder = modelBuilder.Entity<CoverType>();
@@ -78,14 +80,6 @@ namespace EquinityCommerceApp.DataAccess.Data
                 .HasColumnType("varchar(50)")
                 .IsRequired(true)
                 .HasColumnOrder(1);
-                       
-
-            //coverTypeModelBuilder.Property<DateTime>(c => c.CreatedDateTime)
-            //    .HasColumnName("created_on")
-            //    .HasColumnType("date")
-            //    .HasDefaultValue(DateTime.Now)
-            //    .IsRequired(true)
-            //    .HasColumnOrder(3);
         }
     }
 }

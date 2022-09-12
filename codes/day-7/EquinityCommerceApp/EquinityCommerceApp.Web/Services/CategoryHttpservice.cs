@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace EquinityCommerceApp.Web.Services
 {
-    public class CategoryHttpservice : ICategoryHttpService
+    public class CategoryHttpservice : IApiService<CategoryModel>
     {
         /*
         private readonly HttpClient _httpClient;
@@ -15,18 +15,20 @@ namespace EquinityCommerceApp.Web.Services
         }
         */
 
-        private readonly IOptions<ApiUrls> apiRuls;
+        private readonly IOptions<ApiUrls> apiUrls;
         private readonly ILogger<CategoryHttpservice> logger;
+        private readonly ILoggerFactory loggerFactory;        
         private readonly string categoryApiUrl;
 
-        public CategoryHttpservice(IOptions<ApiUrls> apiRuls, ILogger<CategoryHttpservice> logger)
+        public CategoryHttpservice(IOptions<ApiUrls> apiUrls, ILoggerFactory loggerFactory)
         {
-            this.apiRuls = apiRuls;
-            this.logger = logger;
-            categoryApiUrl = apiRuls.Value.CategoryApiUrl;
+            this.apiUrls = apiUrls;
+            this.loggerFactory = loggerFactory;
+            this.logger = loggerFactory.CreateLogger<CategoryHttpservice>();
+            categoryApiUrl = apiUrls.Value.CategoryApiUrl;
         }
 
-        public async Task<ApiResponseModel<CategoryModel>> AddCategoryAsync(CategoryModel category)
+        public async Task<ApiResponseModel<CategoryModel>> AddAsync(CategoryModel category)
         {
             ApiResponseModel<CategoryModel> response = null;
             using (var client = new HttpClient())
@@ -38,7 +40,7 @@ namespace EquinityCommerceApp.Web.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<CategoryModel>> DeleteCategoryAsync(int id)
+        public async Task<ApiResponseModel<CategoryModel>> DeleteAsync(int? id)
         {
             var url = $"{categoryApiUrl}/{id}";
             ApiResponseModel<CategoryModel> response = null;
@@ -51,7 +53,7 @@ namespace EquinityCommerceApp.Web.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<IEnumerable<CategoryModel>>> GetAllCategoriesAsync()
+        public async Task<ApiResponseModel<IEnumerable<CategoryModel>>> GetAllAsync()
         {
             ApiResponseModel<IEnumerable<CategoryModel>> response = null;
             using (var client = new HttpClient())
@@ -61,7 +63,7 @@ namespace EquinityCommerceApp.Web.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<CategoryModel>> GetCategoryAsync(int id)
+        public async Task<ApiResponseModel<CategoryModel>> GetAsync(int? id)
         {
             var url = $"{categoryApiUrl}/{id}";
             ApiResponseModel<CategoryModel> response = null;
@@ -72,7 +74,7 @@ namespace EquinityCommerceApp.Web.Services
             return response;
         }
 
-        public async Task<ApiResponseModel<CategoryModel>> UpdateCategoryAsync(CategoryModel category)
+        public async Task<ApiResponseModel<CategoryModel>> UpdateAsync(CategoryModel category)
         {
             ApiResponseModel<CategoryModel> response = null;
             using (var client = new HttpClient())

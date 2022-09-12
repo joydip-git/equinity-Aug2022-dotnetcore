@@ -17,7 +17,9 @@ app.Run();
 static void ConfigureServices(WebApplicationBuilder builder)
 {
     builder.Services.Configure<ApiUrls>(builder.Configuration.GetSection(ApiUrls.API_URL_SECTION));
-    builder.Services.AddScoped<ICategoryHttpService, CategoryHttpservice>();
+    builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
+    //builder.Services.AddScoped<IApiService<CategoryModel>, CategoryHttpservice>();
+    //builder.Services.AddScoped<IApiService<CoverTypeModel>, CoverTypeHttpService>();
     //builder.Services.AddHttpClient();
     builder.Services.AddControllersWithViews();
 }

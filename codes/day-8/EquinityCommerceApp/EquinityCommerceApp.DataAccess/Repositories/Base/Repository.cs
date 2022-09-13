@@ -38,19 +38,47 @@ namespace EquinityCommerceApp.DataAccess.Repositories.Base
             return values;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<IReadOnlyList<T>> GetAllAsync(string? includeProperties = null)
         {
-            return await _dbSet.ToListAsync();
+            IQueryable<T> query = _dbSet;
+            if (includeProperties != null)
+            {
+                var properties = includeProperties.Split(new char[] {','},StringSplitOptions.RemoveEmptyEntries);
+                foreach (var includeProp in properties)
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            return await query.ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id, string? includeProperties = null)
         {
-            return await _dbSet.FirstOrDefaultAsync<T>(t => t.Id == id);
+            IQueryable<T> query = _dbSet;
+            if (includeProperties != null)
+            {
+                var properties = includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var includeProp in properties)
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            
+            return await query.FirstOrDefaultAsync<T>(t => t.Id == id);
         }
 
-        public async Task<IReadOnlyList<T>> SearchAsync(Expression<Func<T, bool>> predicate)
+        public async Task<IReadOnlyList<T>> SearchAsync(Expression<Func<T, bool>> predicate, string? includeProperties = null)
         {
-            return await _dbSet.Where(predicate).ToListAsync();
+            IQueryable<T> query = _dbSet;
+            if (includeProperties != null)
+            {
+                var properties = includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var includeProp in properties)
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            return await query.Where(predicate).ToListAsync();
         }
     }
 }

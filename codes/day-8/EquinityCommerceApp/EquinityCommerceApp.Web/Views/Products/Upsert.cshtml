@@ -1,0 +1,87 @@
+﻿@model ProductModel
+
+@{
+    ViewData["Title"] = "Create/Update";
+}
+
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> @(Model.Id == 0?"Create":"Update") Product</h2>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>   
+        
+         <div class="mb-3 col-6">
+            <label asp-for="ISBN"></label>
+            <input asp-for="ISBN" class="form-control" />
+            <span asp-validation-for="ISBN" class="text-danger"></span>
+        </div>  
+         <div class="mb-3 col-6">
+            <label asp-for="Author"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>  
+
+        <div class="mb-3 col-6">
+            <label asp-for="ListPrice"></label>
+            <input asp-for="ListPrice" class="form-control" />
+            <span asp-validation-for="ListPrice" class="text-danger"></span>
+        </div>  
+         <div class="mb-3 col-6">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="PriceFifty"></label>
+            <input asp-for="PriceFifty" class="form-control" />
+            <span asp-validation-for="PriceFifty" class="text-danger"></span>
+        </div>  
+         <div class="mb-3 col-6">
+            <label asp-for="PriceHundred"></label>
+            <input asp-for="PriceHundred" class="form-control" />
+            <span asp-validation-for="PriceHundred" class="text-danger"></span>
+        </div>
+
+         <div class="mb-3">
+            <label asp-for="ImageUrl"></label>
+            <input asp-for="ImageUrl" class="form-control" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div> 
+
+        <div class="mb-3 col-6">
+            <label asp-for="CategoryId"></label>
+            <select asp-for="CategoryId" class="form-select">
+                <option>--select--</option>
+            </select>           
+        </div>
+         <div class="mb-3 col-6">
+            <label asp-for="CoverTypeId"></label>
+            <select asp-for="CoverTypeId" class="form-select">
+                <option>--select--</option>
+            </select>           
+        </div>
+
+        @if (Model.Id == 0)
+        {
+            <button class="btn btn-primary" style="width:150px">Create</button>
+        }
+        else
+        {
+            <button class="btn btn-primary" style="width:150px">Update</button>
+        }
+        &nbsp;&nbsp;
+        <a asp-action="Index" asp-controller="Categories" class="btn btn-secondary" style="width:150px">Back To List</a>
+    </div>
+</form>
+

@@ -5,9 +5,9 @@ namespace EquinityCommerceApp.Core.Repositories.Base
 {
     public interface IRepository<T> where T : Entity
     {
-        Task<IReadOnlyList<T>> GetAllAsync();
-        Task<IReadOnlyList<T>> SearchAsync(Expression<Func<T,bool>> predicate);
-        Task<T> GetByIdAsync(int id);
+        Task<IReadOnlyList<T>> GetAllAsync(string? includeProperties = null);
+        Task<IReadOnlyList<T>> SearchAsync(Expression<Func<T, bool>> predicate, string? includeProperties = null);
+        Task<T> GetByIdAsync(int id, string? includeProperties = null);
         Task<T> AddAsync(T entity);
         Task<T> DeleteAsync(T entity);
         Task<IReadOnlyList<T>> DeleteRangeAsync(IReadOnlyList<T> values);

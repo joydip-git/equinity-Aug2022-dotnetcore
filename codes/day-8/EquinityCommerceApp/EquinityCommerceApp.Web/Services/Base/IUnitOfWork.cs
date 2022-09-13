@@ -6,5 +6,6 @@ namespace EquinityCommerceApp.Web.Services.Base
     {
         IApiService<CategoryModel> CategoryService { get; }
         IApiService<CoverTypeModel> CoverTypeService { get; }
+        IApiService<ProductModel> ProductService { get; }
     }
 }

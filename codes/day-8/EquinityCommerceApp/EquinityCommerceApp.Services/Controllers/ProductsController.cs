@@ -24,7 +24,7 @@ namespace EquinityCommerceApp.Services.Controllers
         [HttpGet]
         public async Task<ActionResult<ResponseModel<IEnumerable<Product>>>> GetAllRecordsAsync()
         {
-            var results = await unitOfWork.Product.GetAllAsync();
+            var results = await unitOfWork.Product.GetAllAsync("Category,CoverType");
             if (results == null || results.Count == 0)
             {
                 return NotFound(new ResponseModel<IEnumerable<Product>> { ResponseCode = HttpStatusCode.NotFound, Message = "No records found" });
@@ -43,7 +43,7 @@ namespace EquinityCommerceApp.Services.Controllers
             {
                 return NotFound(new ResponseModel<IEnumerable<Product>> { ResponseCode = HttpStatusCode.NotFound, Message = "categroy id was not proper" });
             }
-            var result = await unitOfWork.Product.GetByIdAsync(id.Value);
+            var result = await unitOfWork.Product.GetByIdAsync(id.Value, "Category,CoverType");
             if (result == null)
             {
                 return NotFound(new ResponseModel<IEnumerable<Product>> { ResponseCode = HttpStatusCode.NotFound, Message = $"No record found with the give id: {id.Value}" });

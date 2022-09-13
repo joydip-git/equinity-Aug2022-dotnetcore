@@ -12,10 +12,13 @@ namespace EquinityCommerceApp.Web.Services
         {
             CategoryService = new CategoryHttpservice(apiUrls, factory);
             CoverTypeService = new CoverTypeHttpService(apiUrls, factory);
+            ProductService = new ProductHttpservice(apiUrls, factory);
         }
 
         public IApiService<CategoryModel> CategoryService { get; private set; }
 
         public IApiService<CoverTypeModel> CoverTypeService { get; private set; }
+
+        public IApiService<ProductModel> ProductService { get; private set; }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PgE1W8ZISOX3OC9I75Dj7O5kqK45kVryZXAyoqgEHUdQYKTTxsDTV5UPZAFRndmPgOT6tYHHq9GCgcq+68pzPA==",
+  "dgSpecHash": "O3eigJOzq8vxv5WbDn/GtteLjwpWl63qSEmm7fdhqZIFLgD6MpguFyWlHA644YNsYLMSqxljMY2NfZM/h178+g==",
   "success": true,
-  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-7\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
+  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-8\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joydip\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\joydip\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

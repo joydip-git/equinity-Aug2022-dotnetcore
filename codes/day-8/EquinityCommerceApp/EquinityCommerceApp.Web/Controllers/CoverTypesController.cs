@@ -1,26 +1,22 @@
 ﻿using EquinityCommerceApp.Web.Models;
-using EquinityCommerceApp.Web.Services;
+using EquinityCommerceApp.Web.Services.Base;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EquinityCommerceApp.Web.Controllers
 {
     public class CoverTypesController : Controller
     {
-        //private readonly IApiService<CoverTypeModel> _coverTypeHttpService;
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<CoverTypesController> _logger;
 
-        //public CoverTypesController(ILogger<CoverTypesController> logger, IApiService<CoverTypeModel> coverTypeHttpService)
         public CoverTypesController(ILogger<CoverTypesController> logger, IUnitOfWork unitOfWork)
         {
             _logger = logger;
-            //_coverTypeHttpService = coverTypeHttpService;
             _unitOfWork = unitOfWork;
         }
 
         public async Task<IActionResult> Index()
         {
-            //var result = await _coverTypeHttpService.GetAllAsync();
             var result = await _unitOfWork.CoverTypeService.GetAllAsync();
             return View(result.Record);
         }
@@ -35,7 +31,6 @@ namespace EquinityCommerceApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CoverTypeModel coverTypeModel)
         {
-            //var response = await _coverTypeHttpService.AddAsync(coverTypeModel);
             var response = await _unitOfWork.CoverTypeService.AddAsync(coverTypeModel);
             if (response.ResponseCode == System.Net.HttpStatusCode.Created)
             {
@@ -58,7 +53,6 @@ namespace EquinityCommerceApp.Web.Controllers
             }
             else
             {
-                //var response = await _coverTypeHttpService.GetAsync(id.Value);
                 var response = await _unitOfWork.CoverTypeService.GetAsync(id.Value);
                 if (response.ResponseCode == System.Net.HttpStatusCode.Found)
                 {
@@ -81,10 +75,8 @@ namespace EquinityCommerceApp.Web.Controllers
             {
                 return View(coverTypeModel);
             }
-
-            //var response = await _coverTypeHttpService.UpdateAsync(coverTypeModel);
             var response = await _unitOfWork.CoverTypeService.UpdateAsync(coverTypeModel);
-            if (response.ResponseCode == System.Net.HttpStatusCode.Created)
+            if (response.ResponseCode == System.Net.HttpStatusCode.OK)
             {
                 TempData["success"] = response.Message;
                 return RedirectToAction("Index");
@@ -103,7 +95,6 @@ namespace EquinityCommerceApp.Web.Controllers
             {
                 return NotFound();
             }
-            //var response = await _coverTypeHttpService.GetAsync(id.Value);
             var response = await _unitOfWork.CoverTypeService.GetAsync(id.Value);
             if (response.ResponseCode == System.Net.HttpStatusCode.Found)
             {
@@ -126,9 +117,8 @@ namespace EquinityCommerceApp.Web.Controllers
             }
             else
             {
-                //var response = await _coverTypeHttpService.DeleteAsync(id.Value);
                 var response = await _unitOfWork.CoverTypeService.DeleteAsync(id.Value);
-                if (response.ResponseCode == System.Net.HttpStatusCode.Found)
+                if (response.ResponseCode == System.Net.HttpStatusCode.OK)
                 {
                     TempData["success"] = response.Message;
                     return RedirectToAction("Index");

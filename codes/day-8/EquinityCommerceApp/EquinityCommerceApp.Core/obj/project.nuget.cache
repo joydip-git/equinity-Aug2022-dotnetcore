@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yNf8ZAslyLtM0bO4xBMwfBYDZ5uV7t5PcDxNzuwYcFc6BbSQ3EoVG4r3IAGJkq2GxgJqo+EHoQdMHvoiyT3S1A==",
+  "dgSpecHash": "yEJtZWrBE7OjpbQaXcII3EQ9A/qyio5PbiCSgMRNSDGRoWRZVKNCPWMB9Nbb0uuFAmivYq7+maZyrsVHaVBe8g==",
   "success": true,
-  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-7\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj",
+  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-8\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

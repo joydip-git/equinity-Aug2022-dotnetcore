@@ -1,20 +1,12 @@
 ﻿using EquinityCommerceApp.Web.Models;
+using EquinityCommerceApp.Web.Services.Base;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 namespace EquinityCommerceApp.Web.Services
 {
     public class CategoryHttpservice : IApiService<CategoryModel>
-    {
-        /*
-        private readonly HttpClient _httpClient;
-
-        public CategoryHttpservice(HttpClient httpClient)
-        {
-            _httpClient = httpClient;
-        }
-        */
-
+    {       
         private readonly IOptions<ApiUrls> apiUrls;
         private readonly ILogger<CategoryHttpservice> logger;
         private readonly ILoggerFactory loggerFactory;        

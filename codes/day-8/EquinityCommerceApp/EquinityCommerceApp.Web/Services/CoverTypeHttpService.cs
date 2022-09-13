@@ -1,4 +1,5 @@
 ﻿using EquinityCommerceApp.Web.Models;
+using EquinityCommerceApp.Web.Services.Base;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
@@ -16,7 +17,7 @@ namespace EquinityCommerceApp.Web.Services
             this.apiUrls = apiUrls;
             this.factory = loggerFactory; 
             this.logger = this.factory.CreateLogger<CoverTypeHttpService>();
-            this.coverTypeApiUrl = apiUrls.Value.CoverTypeApiUrl; ;
+            this.coverTypeApiUrl = apiUrls.Value.CoverTypeApiUrl;
         }
 
         public async Task<ApiResponseModel<CoverTypeModel>> AddAsync(CoverTypeModel coverType)

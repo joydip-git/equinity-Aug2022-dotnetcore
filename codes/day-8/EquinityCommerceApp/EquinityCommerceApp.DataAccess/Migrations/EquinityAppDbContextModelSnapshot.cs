@@ -35,7 +35,7 @@ namespace EquinityCommerceApp.DataAccess.Migrations
                     b.Property<DateTime>("CreatedDateTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-                        .HasDefaultValue(new DateTime(2022, 9, 12, 11, 7, 43, 319, DateTimeKind.Local).AddTicks(8532))
+                        .HasDefaultValue(new DateTime(2022, 9, 13, 10, 7, 50, 926, DateTimeKind.Local).AddTicks(8634))
                         .HasColumnName("created_on")
                         .HasColumnOrder(3);
 
@@ -76,6 +76,106 @@ namespace EquinityCommerceApp.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("covertypes", (string)null);
+                });
+
+            modelBuilder.Entity("EquinityCommerceApp.Core.Entities.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("product_id")
+                        .HasColumnOrder(0);
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 100L, 1);
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("product_author")
+                        .HasColumnOrder(2);
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int")
+                        .HasColumnName("category_id")
+                        .HasColumnOrder(10);
+
+                    b.Property<int?>("CoverTypeId")
+                        .HasColumnType("int")
+                        .HasColumnName("cover_type_id")
+                        .HasColumnOrder(11);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("varchar(max)")
+                        .HasColumnName("product_description")
+                        .HasColumnOrder(4);
+
+                    b.Property<string>("ISBN")
+                        .IsRequired()
+                        .HasColumnType("varchar(10)")
+                        .HasColumnName("product_isbn")
+                        .HasColumnOrder(3);
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("varchar(max)")
+                        .HasColumnName("product_image_url")
+                        .HasColumnOrder(9);
+
+                    b.Property<decimal>("ListPrice")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0.0m)
+                        .HasColumnName("product_list_price")
+                        .HasColumnOrder(5);
+
+                    b.Property<decimal>("Price")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0.0m)
+                        .HasColumnName("product_price")
+                        .HasColumnOrder(6);
+
+                    b.Property<decimal>("PriceFifty")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0.0m)
+                        .HasColumnName("product_fifty_price")
+                        .HasColumnOrder(7);
+
+                    b.Property<decimal>("PriceHundred")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0.0m)
+                        .HasColumnName("product_hundred_price")
+                        .HasColumnOrder(8);
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("product_name")
+                        .HasColumnOrder(1);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("CoverTypeId");
+
+                    b.ToTable("products", (string)null);
+                });
+
+            modelBuilder.Entity("EquinityCommerceApp.Core.Entities.Product", b =>
+                {
+                    b.HasOne("EquinityCommerceApp.Core.Entities.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId");
+
+                    b.HasOne("EquinityCommerceApp.Core.Entities.CoverType", "CoverType")
+                        .WithMany()
+                        .HasForeignKey("CoverTypeId");
+
+                    b.Navigation("Category");
+
+                    b.Navigation("CoverType");
                 });
 #pragma warning restore 612, 618
         }

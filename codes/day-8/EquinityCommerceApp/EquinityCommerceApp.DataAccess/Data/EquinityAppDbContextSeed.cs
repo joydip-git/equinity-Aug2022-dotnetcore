@@ -24,6 +24,27 @@ namespace EquinityCommerceApp.DataAccess.Data
             };
             return coverTypes;
         }
+        private static IEnumerable<Product> GetPreConfiguredProducts()
+        {
+            var products = new List<Product>
+            {
+                new Product
+                {
+                    Title="The Alchemist",
+                    ISBN="1234567890",
+                    ImageUrl="",
+                    Description="New book from Paul Cohelo",
+                    Author="Paul Cohelo",
+                    ListPrice = 499,
+                    Price=399,
+                    PriceFifty=349,
+                    PriceHundred=299,
+                    CategoryId=107,
+                    CoverTypeId=100
+                }
+            };
+            return products;
+        }
         public static async Task SeedAsync(EquinityAppDbContext dbContext, ILoggerFactory loggerFactory, int? retryAttempt = 0)
         {
             int retryCount = retryAttempt ?? 0;
@@ -42,6 +63,12 @@ namespace EquinityCommerceApp.DataAccess.Data
                     dbContext.CoverTypes.AddRange(coverTypes);
                     await dbContext.SaveChangesAsync();
                 }
+                if (!dbContext.Products.Any())
+                {
+                    var products = GetPreConfiguredProducts();
+                    dbContext.Products.AddRange(products);
+                    await dbContext.SaveChangesAsync();
+                }
             }
             catch (Exception ex)
             {
@@ -50,7 +77,7 @@ namespace EquinityCommerceApp.DataAccess.Data
                     retryCount++;
                     var logger = loggerFactory.CreateLogger<EquinityAppDbContext>();
                     logger.LogError(ex.Message);
-                    await SeedAsync(dbContext,loggerFactory, retryAttempt);
+                    await SeedAsync(dbContext, loggerFactory, retryAttempt);
                 }
                 throw;
             }

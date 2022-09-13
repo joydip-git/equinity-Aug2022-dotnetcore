@@ -1,6 +1,7 @@
 using EquinityCommerceApp.Web.Mapping;
 using EquinityCommerceApp.Web.Models;
 using EquinityCommerceApp.Web.Services;
+using EquinityCommerceApp.Web.Services.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +19,6 @@ static void ConfigureServices(WebApplicationBuilder builder)
 {
     builder.Services.Configure<ApiUrls>(builder.Configuration.GetSection(ApiUrls.API_URL_SECTION));
     builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
-    //builder.Services.AddScoped<IApiService<CategoryModel>, CategoryHttpservice>();
-    //builder.Services.AddScoped<IApiService<CoverTypeModel>, CoverTypeHttpService>();
     //builder.Services.AddHttpClient();
     builder.Services.AddControllersWithViews();
 }

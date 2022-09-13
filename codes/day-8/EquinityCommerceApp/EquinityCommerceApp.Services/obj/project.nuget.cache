@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CLZu4kOlxR18xla23Ek7Kpf0BTwDOeFoNcxha2f2T3mAl4me594wcjuQg6W2WLIGoI4aaf6ONT4XCMStMxECQA==",
+  "dgSpecHash": "wAtWLUa/TnVxMOiU/PbtG0ypgD55IgW2nGqwNezRKsDlEobgKAHVolnLsxrMt6D5ZAqF1N71BbyInjGOR/1jaQ==",
   "success": true,
-  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-7\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
+  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-8\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\joydip\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

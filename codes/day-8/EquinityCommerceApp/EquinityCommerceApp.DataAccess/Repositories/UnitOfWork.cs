@@ -10,9 +10,12 @@ namespace EquinityCommerceApp.DataAccess.Repositories
         {
             Category = new CategoryRepository(dbContext);
             CoverType = new CoverTypeRepository(dbContext);
+            Product = new ProductRepository(dbContext);
         }
         public ICategoryRepository Category { get; private set; }
 
         public ICoverTypeRepository CoverType { get; private set; }
+
+        public IProductRepository Product { get; private set; }
     }
 }

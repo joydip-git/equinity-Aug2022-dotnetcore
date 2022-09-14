@@ -35,7 +35,7 @@ namespace EquinityCommerceApp.DataAccess.Migrations
                     b.Property<DateTime>("CreatedDateTime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-                        .HasDefaultValue(new DateTime(2022, 9, 13, 10, 7, 50, 926, DateTimeKind.Local).AddTicks(8634))
+                        .HasDefaultValue(new DateTime(2022, 9, 14, 10, 50, 43, 418, DateTimeKind.Local).AddTicks(7222))
                         .HasColumnName("created_on")
                         .HasColumnOrder(3);
 

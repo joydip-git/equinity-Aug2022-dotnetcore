@@ -5,8 +5,7 @@ using Microsoft.Extensions.Options;
 namespace EquinityCommerceApp.Web.Services
 {
     public class UnitOfWork : IUnitOfWork
-    {
-        private readonly IOptions<ApiUrls> apiUrls;
+    {       
 
         public UnitOfWork(IOptions<ApiUrls> apiUrls, ILoggerFactory factory)
         {

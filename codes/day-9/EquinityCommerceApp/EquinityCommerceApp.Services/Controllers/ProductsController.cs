@@ -58,7 +58,7 @@ namespace EquinityCommerceApp.Services.Controllers
         public async Task<ActionResult<ResponseModel<Product>>> Create([FromBody] Product product)
         {
             var result = await unitOfWork.Product.AddAsync(product);
-            return CreatedAtAction("Create", new ResponseModel<Product> { ResponseCode = HttpStatusCode.Created, Message = "Category created successfully", Record = result });
+            return CreatedAtAction("Create", new ResponseModel<Product> { ResponseCode = HttpStatusCode.Created, Message = "Product created successfully", Record = result });
         }
 
         [HttpPut]

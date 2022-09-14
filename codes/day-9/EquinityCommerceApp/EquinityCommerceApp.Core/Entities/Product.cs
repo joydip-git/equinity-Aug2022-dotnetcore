@@ -16,7 +16,7 @@ namespace EquinityCommerceApp.Core.Entities
         public string ImageUrl { get; set; }
         public int? CategoryId { get; set; }
         public int? CoverTypeId { get; set; }
-        public Category Category { get; set; }
-        public CoverType CoverType { get; set; }
+        public Category? Category { get; set; }
+        public CoverType? CoverType { get; set; }
     }
 }

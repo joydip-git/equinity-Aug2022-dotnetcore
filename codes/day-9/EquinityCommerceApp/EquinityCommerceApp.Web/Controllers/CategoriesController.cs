@@ -32,17 +32,26 @@ namespace EquinityCommerceApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CategoryModel category)
         {
-            var response = await unitOfWork.CategoryService.AddAsync(category);
-            if (response.ResponseCode == System.Net.HttpStatusCode.Created)
+            if(category.Name == category.DisplayOrder.ToString())
             {
-                TempData["success"] = response.Message;
-                return RedirectToAction("Index");                
+                ModelState.AddModelError("DisplayOrder", "Name and DisplayOrder should not be same");
+            }
+            if (ModelState.IsValid)
+            {
+                var response = await unitOfWork.CategoryService.AddAsync(category);
+                if (response.ResponseCode == System.Net.HttpStatusCode.Created)
+                {
+                    TempData["success"] = response.Message;
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["error"] = response.Message;
+                    return View(category);
+                }
             }
             else
-            {
-                TempData["error"] = response.Message;
                 return View(category);
-            }
         }
 
         [HttpGet]

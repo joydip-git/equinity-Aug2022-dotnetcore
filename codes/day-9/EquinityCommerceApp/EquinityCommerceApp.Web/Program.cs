@@ -40,6 +40,5 @@ static void ConfigureMiddlewarePipeline(WebApplication app)
 
     app.MapControllerRoute(
         name: "default",
-        pattern: "{controller}/{action}/{id?}",
-        defaults: new { controller = "Home", action = "Index" });
+        pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 }

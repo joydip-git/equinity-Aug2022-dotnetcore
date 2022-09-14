@@ -1,0 +1,5 @@
+1. create nuget package
+2. Filters
+3. Caching - azure redis caching
+4. Validation
+5. JWT authentication with identity server 4

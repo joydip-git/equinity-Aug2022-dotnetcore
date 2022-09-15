@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HhQGumPva1ngxKdUBBEqUhtzyRXFk0K7W9t7IqgQTIpSTmG2kcpr/YiRWTwL9u701OpHs4cvh/LYItpaSYDP9g==",
+  "dgSpecHash": "ET57bpNnPs7Tt/MXMO87n1e4va+CTHSl6fkEDo/SavddcXQVc8kvqAEAALLbtmR07RdxVIooY7gI6VYOmw54xg==",
   "success": true,
-  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj",
+  "projectFilePath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joydip\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

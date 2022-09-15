@@ -1,0 +1,40 @@
+Filters:
+
+	pipeline:
+		Authorization filters: runs first
+		Resource filters: 
+			runs after authorization
+			OnResourceExecuting: runs before the rest of the pipeline
+			OnResourceExecuted: runs after the rest of the pipeline
+		Action Filters: 
+				runs immediately before and after an action method is called
+				Can change the arguments passed into an action
+				Can change the result returned from the acion
+		Exception Filters:
+				if any exception occurs
+				will occur before the response body hs been sent
+		Result Filters:
+				runs before and after the execution of action results
+		
+
+		Filter
+		Attributed Filter
+
+		Filter Attributes:
+			ActionFilterAttribute
+			ExceptionFilterAttribute
+			ResultFilterAttribute
+			FomatFilterAttribute
+			ServiceFilterAttribute
+			TypeFilterAttribute
+
+			IFilterFactory
+
+		type-activated: 
+				an instance of filter is created with each request
+				have any DI, those depndecies are populated by DI service
+		
+
+Caching:
+authentication and authorization:
+Nuget packages:

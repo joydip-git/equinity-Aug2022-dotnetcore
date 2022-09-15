@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EquinityCommerceApp.Web
 build_property.RootNamespace = EquinityCommerceApp.Web
-build_property.ProjectDir = E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\EquinityCommerceApp.Web\
+build_property.ProjectDir = E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\EquinityCommerceApp.Web
+build_property.MSBuildProjectDirectory = E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Create.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Delete.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Edit.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Index.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Create.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ292ZXJUeXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Delete.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ292ZXJUeXBlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Edit.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ292ZXJUeXBlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Index.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/CoverTypes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ292ZXJUeXBlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Products/Index.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Products/Upsert.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/Products/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcVXBzZXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/_ViewImports.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/_ViewStart.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Details.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Index.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Privacy.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/_ViewImports.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/_ViewStart.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Areas/Customer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/Error.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_Notification.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/_ViewImports.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/_ViewStart.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/training/equinity-Aug2022-dotnetcore/codes/day-9/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_Layout.cshtml]
+[E:/training/equinity-Aug2022-dotnetcore/codes/day-10/EquinityCommerceApp/EquinityCommerceApp.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-npv5m8yoh9

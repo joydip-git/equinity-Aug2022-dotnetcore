@@ -2008,11 +2008,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
+      "projectUniqueName": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
       "projectName": "EquinityCommerceApp.Services",
-      "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
+      "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Services\\EquinityCommerceApp.Services.csproj",
       "packagesPath": "C:\\Users\\joydip\\.nuget\\packages\\",
-      "outputPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Services\\obj\\",
+      "outputPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2032,11 +2032,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj": {
-              "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj"
+            "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj": {
+              "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Core\\EquinityCommerceApp.Core.csproj"
             },
-            "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj": {
-              "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj"
+            "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj": {
+              "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.DataAccess\\EquinityCommerceApp.DataAccess.csproj"
             }
           }
         }

@@ -8616,11 +8616,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
+      "projectUniqueName": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
       "projectName": "EquinityCommerceApp.Web",
-      "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
+      "projectPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Web\\EquinityCommerceApp.Web.csproj",
       "packagesPath": "C:\\Users\\joydip\\.nuget\\packages\\",
-      "outputPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-9\\EquinityCommerceApp\\EquinityCommerceApp.Web\\obj\\",
+      "outputPath": "E:\\training\\equinity-Aug2022-dotnetcore\\codes\\day-10\\EquinityCommerceApp\\EquinityCommerceApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

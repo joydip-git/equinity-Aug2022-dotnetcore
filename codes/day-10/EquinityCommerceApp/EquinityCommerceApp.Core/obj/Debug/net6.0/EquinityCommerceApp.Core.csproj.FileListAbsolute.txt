@@ -46,3 +46,15 @@ E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\Equinity
 E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\refint\EquinityCommerceApp.Core.dll
 E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.pdb
 E:\training\equinity-Aug2022-dotnetcore\codes\day-9\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\ref\EquinityCommerceApp.Core.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\bin\Debug\net6.0\EquinityCommerceApp.Core.deps.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\bin\Debug\net6.0\EquinityCommerceApp.Core.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\bin\Debug\net6.0\EquinityCommerceApp.Core.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.csproj.AssemblyReference.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.AssemblyInfoInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.AssemblyInfo.cs
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.csproj.CoreCompileInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\refint\EquinityCommerceApp.Core.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\EquinityCommerceApp.Core.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\EquinityCommerceApp\EquinityCommerceApp.Core\obj\Debug\net6.0\ref\EquinityCommerceApp.Core.dll

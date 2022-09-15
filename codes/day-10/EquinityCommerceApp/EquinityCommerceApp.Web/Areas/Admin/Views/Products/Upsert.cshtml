@@ -1,0 +1,155 @@
+﻿@model UpsertViewModel
+
+@{
+    ViewData["Title"] = "Create/Update";
+}
+
+
+<form method="post" asp-controller="Products" asp-action="Upsert" enctype="multipart/form-data" asp-area="Admin">
+    <input hidden asp-for="Product.Id" />
+    <input hidden asp-for="Product.ImageUrl" />
+
+    <div class="row">
+        <div class="col-10">
+            <div class="border p-3 mt-4 row">
+                @*<div class="row pb-2">
+                <h2 class="text-primary"> @(Model.Id == 0?"Create":"Update") Product</h2>
+                </div>*@
+                <div class="col-12 pb-2">
+                    <h2 class="text-primary">@(Model.Product.Id==0?"Create":"Update") Product</h2>
+                    <hr />
+                </div>
+
+                <!--Title-->
+                <div class="mb-3">
+                    <label asp-for="Product.Title"></label>
+                    <input asp-for="Product.Title" class="form-control" />
+                    <span asp-validation-for="Product.Title" class="text-danger"></span>
+                </div>
+
+                <!--Description-->
+                <div class="mb-3">
+                    <label asp-for="Product.Description"></label>
+                    <textarea asp-for="Product.Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
+                </div>
+
+                <!--ISBN-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.ISBN"></label>
+                    <input asp-for="Product.ISBN" class="form-control" />
+                    <span asp-validation-for="Product.ISBN" class="text-danger"></span>
+                </div>
+
+                <!--Author-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.Author"></label>
+                    <input asp-for="Product.Author" class="form-control" />
+                    <span asp-validation-for="Product.Author" class="text-danger"></span>
+                </div>
+
+                <!--ListPrice-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.ListPrice"></label>
+                    <input asp-for="Product.ListPrice" class="form-control" />
+                    <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+                </div>
+
+                <!--Price(1-50)-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.Price"></label>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
+                </div>
+
+                <!--Price(50-100)-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.PriceFifty"></label>
+                    <input asp-for="Product.PriceFifty" class="form-control" />
+                    <span asp-validation-for="Product.PriceFifty" class="text-danger"></span>
+                </div>
+
+                <!--Price(100+)-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.PriceHundred"></label>
+                    <input asp-for="Product.PriceHundred" class="form-control" />
+                    <span asp-validation-for="Product.PriceHundred" class="text-danger"></span>
+                </div>
+
+                <!--ImageURL-->
+                <div class="mb-3">
+                    <label asp-for="Product.ImageUrl"></label>
+                    <input type="file" id="uploadBox" name="file" asp-for="Product.ImageUrl" class="form-control" />
+                    <span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
+                </div>
+
+                <!--category list-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.CategoryId"></label>
+                    <select asp-for="Product.CategoryId" class="form-select" asp-items="@Model.CategoryList">
+                        <option disabled selected>--select--</option>
+                    </select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+
+                <!--cover type list-->
+                <div class="mb-3 col-6">
+                    <label asp-for="Product.CoverTypeId"></label>
+                    <select asp-for="Product.CoverTypeId" class="form-select" asp-items="@Model.CoverTypeyList">
+                        <option disabled selected>--select--</option>
+                    </select>
+                    <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    @if (Model.Product.Id == 0)
+                    {
+                        <button class="btn btn-primary" style="width:150px" onclick="return ValidateImageUrl()">Create</button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-primary" style="width:150px">Update</button>
+                    }
+                    &nbsp;&nbsp;
+                    <a asp-area="Admin" asp-action="Index" asp-controller="Products" class="btn btn-secondary" style="width:150px">
+                        Back To List
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 pt-4">
+            <img src="@Model.Product.ImageUrl" width="100%" style="border-radius:5px;border:1px solid #bbb9b9" />
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
+    </script>
+    <script>
+        function ValidateImageUrl() {
+            if (document.getElementById("uploadBox").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please upload an image!'
+                })
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+}
+

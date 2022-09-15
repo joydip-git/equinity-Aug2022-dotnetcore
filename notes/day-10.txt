@@ -34,7 +34,24 @@ Filters:
 				an instance of filter is created with each request
 				have any DI, those depndecies are populated by DI service
 		
-
+DistributedCacheHelperByJoydip
 Caching:
+	In memory Caching:
+	Distributed Caching:
+		Memory
+		SQL Server
+		Redis
+		NCache
+
+	IDistributedCache:
+			Get,GetAsync, GetString,...
+			Set, StAsync, SetString...
+			Refresh, RefreshAsync
+			Remove, RemoveAsync
+
+	Cache Tag helper: <cache expires-on="@new DateTime(..,..,..)" expires-after="@TimeSapn.FronSeconds(100)">@DataTime.Now</cache>
 authentication and authorization:
 Nuget packages:
+
+identity server for third party identity management and JWT authentication
+https://identityserver4.readthedocs.io/en/latest/

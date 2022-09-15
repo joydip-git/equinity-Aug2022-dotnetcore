@@ -1,0 +1,12 @@
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\bin\Debug\net6.0\DistributedCacheHelper.deps.json
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\bin\Debug\net6.0\DistributedCacheHelper.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\bin\Debug\net6.0\DistributedCacheHelper.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.csproj.AssemblyReference.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.GeneratedMSBuildEditorConfig.editorconfig
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.AssemblyInfoInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.AssemblyInfo.cs
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.csproj.CoreCompileInputs.cache
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\refint\DistributedCacheHelper.dll
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\DistributedCacheHelper.pdb
+E:\training\equinity-Aug2022-dotnetcore\codes\day-10\CachingDemo.WebAPI\DistributedCacheHelper\obj\Debug\net6.0\ref\DistributedCacheHelper.dll
